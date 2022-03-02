@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= 
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+            
+        <script src= 
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+        </script> 
+            
+        <script src= 
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+        </script> 
+            
+        <script src= 
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+        </script>
+    <title>Document</title>
+    <style type="text/css">
+        h1 {
+            color:green;
+        }
+        .xyz {
+            background-size: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .btn-circle.btn-sm {
+            width: 20px;
+            height: 20px;
+            padding: 3px 0px;
+            border-radius: 10px;
+            font-size: 5px;
+            text-align: center;
+        }
+        .btn-circle.btn-md {
+            width: 40px;
+            height: 40px;
+            padding: 7px 10px;
+            border-radius: 25px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            border-radius: 35px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-md-7 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>Name </th>
+                    <th>Email </th>
+                    <th>Username </th>
+                    <th>Delete</th>
+                    <th>Edite</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> 1 </td>
+                    <td> {{ username }} </td>
+                    <td> {{ email }} </td>
+                    <td>
+                        jordi_alx
+                    </td>
+                    <td><button type="button" data-toggle="modal" data-target="#edit" data-uid="1" class="btn btn-danger btn-circle btn-sm"><span></span>Delete</button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#delete" data-uid="1" class="btn btn-warning btn-circle btn-sm"><span></span>Edite</button></td>
+                </tr>
+                  <tr>
+                    <td> 2 </td>
+                    <td> {{ username }} </td>
+                    <td> {{ email }}</td>
+                    <td>
+                        tommy_1
+                    </td>
+                    <td><button type="button" data-toggle="modal" data-target="#edit" data-uid="1" class="btn btn-danger btn-circle btn-sm"><span></span>Delete</button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#delete" data-uid="1" class="btn btn-warning btn-circle btn-sm"><span></span>Edite</button></td>
+                  </tr>
+                  <tr>
+                    <td> 3 </td>
+                    <td> {{ username }} </td>
+                    <td> {{ email }} </td>
+                    <td>
+                        tarokh.git
+                    </td>
+                    <td><button type="button" data-toggle="modal" data-target="#edit" data-uid="1" class="btn btn-danger btn-circle btn-sm"><span></span>Delete</button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#delete" data-uid="1" class="btn btn-warning btn-circle btn-sm"><span></span>Edite</button></td>
+                  </tr>
+                  <tr>
+                    <td> 4 </td>
+                    <td> {{ username }} </td>
+                    <td> {{ email }} </td>
+                    <td>
+                        John_smith
+                    </td>
+                    <td><button type="button" data-toggle="modal" data-target="#edit" data-uid="1" class="btn btn-danger btn-circle btn-sm"><span></span>Delete</button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#delete" data-uid="1" class="btn btn-warning btn-circle btn-sm"><span></span>Edite</button></td>
+                  </tr>
+                  <tr>
+                    <td> 5 </td>
+                    <td> {{ username }} </td>
+                    <td> {{ email }} </td>
+                    <td>
+                        Harry_536
+                    </td>
+                    <td><button type="button" data-toggle="modal" data-target="#edit" data-uid="1" class="btn btn-danger btn-circle btn-sm"><span></span>Delete</button></td>
+                    <td><button type="button" data-toggle="modal" data-target="#delete" data-uid="1" class="btn btn-warning btn-circle btn-sm"><span></span>Edite</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
