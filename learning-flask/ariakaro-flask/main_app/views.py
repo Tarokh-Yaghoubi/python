@@ -1,7 +1,7 @@
 # views , routes code
 
 from flask import redirect, render_template, url_for
-from main_app import app, db
+from main_app import app
 from flask_sqlalchemy import SQLAlchemy
 from flask import request
 
