@@ -1,29 +1,22 @@
+from flask import Flask, render_template
 import mysql.connector
-from flask import Flask
-from flask import render_template
-from mysql.connector import Connect, Error
+from flask_mysqlpool import MySQLPool
 
 
 app = Flask(__name__)
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = 'management'
+app.config['MYSQL_POOL_NAME'] = 'mysql_pool'
+app.config['MYSQL_POOL_SIZE'] = 30
+app.config['MYSQL_AUTOCOMMIT'] = True
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="",
-  database="management"
-)
 
-mycursor = mydb.cursor()
 
-mycursor.execute("SELECT * FROM users")
-
-myresult = mycursor.fetchall()
-
-for x in myresult:
-    ...
+mysql = MySQLPool(app)
 
 import main_app.views
-import main_app.models
 
 
 if __name__ == '__main__':
